@@ -158,18 +158,33 @@ footer {
     background: black;
     color: white;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    flex-direction: column;
+    height: 100vh;
 }
 
-.contact-box {
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    width: 50%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Contact Box */
+.contact-box {
+    width: 100%;
+    padding: 20px;
     text-align: center;
     font-size: 18px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
 .contact-box a {
@@ -178,12 +193,17 @@ footer {
     font-weight: bold;
 }
 
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* ✅ Contact Form */
 .contact-form {
-    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    width: 50%;
-    text-align: center;
 }
 
 .contact-form input, .contact-form textarea {
@@ -193,10 +213,17 @@ footer {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #ddd;
 }
 
 .contact-form button {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px;
     border: none;
     background: yellow;
     color: black;
@@ -229,7 +256,7 @@ footer {
 
 /* ✅ Responsive Design */
 @media (max-width: 768px) {
-    .contact-box, .contact-form {
+    .contact-container {
         width: 90%;
     }
 }
