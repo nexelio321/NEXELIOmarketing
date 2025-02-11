@@ -1,4 +1,4 @@
-/* General Styles */
+/* ✅ Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* Navigation Bar */
+/* ✅ Navigation Bar */
 header {
     background: black;
     color: white;
@@ -20,7 +20,7 @@ header {
     height: 50px;
 }
 
-/* Navigation Menu */
+/* ✅ Navigation Menu */
 nav ul {
     list-style: none;
     display: flex;
@@ -41,7 +41,7 @@ nav ul li a {
     color: yellow;
 }
 
-/* Background Video */
+/* ✅ Hero Section */
 .hero {
     position: relative;
     width: 100%;
@@ -53,6 +53,7 @@ nav ul li a {
     text-align: center;
 }
 
+/* ✅ Background Video */
 #bg-video {
     position: absolute;
     top: 0;
@@ -62,7 +63,7 @@ nav ul li a {
     object-fit: cover;
 }
 
-/* Dark Overlay */
+/* ✅ Dark Overlay */
 .overlay {
     position: absolute;
     top: 0;
@@ -72,7 +73,7 @@ nav ul li a {
     background: rgba(0, 0, 0, 0.5);
 }
 
-/* Hero Text */
+/* ✅ Hero Text */
 .hero-text {
     position: absolute;
     top: 50%;
@@ -82,14 +83,14 @@ nav ul li a {
     text-align: center;
 }
 
-/* Main Title */
+/* ✅ Main Title */
 .hero-text h1 {
     font-size: 50px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-/* Quote Styling */
+/* ✅ Quote Styling */
 .hero-text .quote {
     font-size: 22px;
     font-style: italic;
@@ -97,7 +98,7 @@ nav ul li a {
     margin-top: 10px;
 }
 
-/* Contact Button */
+/* ✅ Contact Us Button */
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -115,12 +116,12 @@ nav ul li a {
     background: white;
 }
 
-/* WhatsApp Floating Button */
+/* ✅ WhatsApp Floating Button */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 60px; /* Size of button */
+    width: 60px; /* Button size */
     height: 60px;
     border-radius: 50%;
     background: #25d366;
@@ -138,4 +139,39 @@ nav ul li a {
 
 .whatsapp-float:hover {
     transform: scale(1.1);
+}
+
+/* ✅ Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    font-size: 14px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text .quote {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
 }
