@@ -95,9 +95,9 @@ nav ul li a {
 
 /* ✅ Services Section */
 .services {
-    padding: 50px;
+    padding: 60px 20px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.9);
+    background: black; /* FIX: Background Black */
     color: white;
 }
 
