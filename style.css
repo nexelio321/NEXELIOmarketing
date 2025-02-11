@@ -121,7 +121,7 @@ nav ul li a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 60px; /* Button size */
+    width: 60px; /* Button Size */
     height: 60px;
     border-radius: 50%;
     background: #25d366;
@@ -130,13 +130,17 @@ nav ul li a {
     justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
+    text-decoration: none;
 }
 
+/* ✅ WhatsApp Icon */
 .whatsapp-float img {
     width: 35px;
     height: 35px;
+    display: block;
 }
 
+/* ✅ Hover Effect */
 .whatsapp-float:hover {
     transform: scale(1.1);
 }
