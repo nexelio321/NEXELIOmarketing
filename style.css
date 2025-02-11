@@ -50,10 +50,10 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
 }
 
+/* Background Video */
 #bg-video {
     position: absolute;
     top: 0;
@@ -63,6 +63,7 @@ nav ul li a {
     object-fit: cover;
 }
 
+/* Dark Overlay */
 .overlay {
     position: absolute;
     top: 0;
@@ -74,9 +75,11 @@ nav ul li a {
 
 /* Hero Text Centering */
 .hero-text {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    z-index: 1;
     text-align: center;
 }
 
