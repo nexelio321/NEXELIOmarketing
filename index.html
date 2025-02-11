@@ -3,49 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexelio Marketing</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nexelio Marketing - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="logo.png" alt="Nexelio Marketing Logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">HOME</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <video autoplay muted loop id="bg-video">
-            <source src="background.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+        <video autoplay muted loop playsinline id="hero-video">
+            <source src="assets/background-video.mp4" type="video/mp4">
         </video>
-        <div class="overlay"></div>
-
-        <!-- Hero Text -->
+        <div class="hero-overlay"></div>
         <div class="hero-text">
-            <h1>NEXELIO MARKETING</h1>
-            <p class="quote">Your Growth is Our Mission</p>
-            <a href="mailto:nexeliomarketing26@gmail.com" class="btn">Contact Us</a>
+            <h1>Nexelio Marketing</h1>
+            <p>Transforming Digital Experiences</p>
+            <a href="#services" class="explore-btn">Explore Services ⬇</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <img src="assets/services-1.jpg" alt="SEO Optimization">
+                <h3>SEO Optimization</h3>
+            </div>
+            <div class="service">
+                <img src="assets/services-2.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+            </div>
+            <div class="service">
+                <img src="assets/services-3.jpg" alt="Social Media Marketing">
+                <h3>Social Media Marketing</h3>
+            </div>
         </div>
     </section>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/919899300589" target="_blank" class="whatsapp-float">
-        <img src="whatsapp-icon.png" alt="WhatsApp">
-    </a>
+    <a href="https://wa.me/9899300589" class="whatsapp-float" target="_blank">Let's Talk</a>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 Nexelio Marketing</p>
+    </footer>
+
 </body>
 </html>
