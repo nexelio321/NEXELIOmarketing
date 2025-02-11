@@ -16,11 +16,13 @@ header {
     align-items: center;
 }
 
+/* Logo Styling */
 .logo img {
-    height: 40px;
+    height: 50px;  /* Adjust the logo size */
+    width: auto;
 }
 
-/* Navigation Links */
+/* Navigation Menu */
 nav ul {
     list-style: none;
     display: flex;
