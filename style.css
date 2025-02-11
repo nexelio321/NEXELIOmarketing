@@ -17,7 +17,7 @@ header {
 }
 
 .logo img {
-    height: 40px; /* Make sure logo displays correctly */
+    height: 40px;
 }
 
 nav ul {
@@ -50,6 +50,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
 }
 
 #bg-video {
@@ -70,10 +71,12 @@ nav ul li a {
     background: rgba(0, 0, 0, 0.5);
 }
 
+/* Hero Text */
 .hero-text {
     position: relative;
     color: white;
     z-index: 1;
+    text-align: center;
 }
 
 .hero-text h1 {
@@ -82,11 +85,15 @@ nav ul li a {
     font-weight: bold;
 }
 
-.hero-text p {
-    font-size: 20px;
+/* Quote */
+.hero-text .quote {
+    font-size: 24px;
+    font-style: italic;
     margin-top: 10px;
+    color: #ffcc00;
 }
 
+/* Contact Button */
 .btn {
     display: inline-block;
     margin-top: 20px;
